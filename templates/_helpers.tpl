@@ -41,7 +41,6 @@ helm.sh/chart: {{ include "krakend.chart" . }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
-{{ /* Istio Labels */ }}
 app: {{ .Chart.Name | quote }}
 version: {{ .Values.image.tag | default .Chart.AppVersion | quote }}
 release: {{ .Release.Name }}
