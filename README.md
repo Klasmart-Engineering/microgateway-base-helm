@@ -1,6 +1,14 @@
-# krakend-helm
-An helm chart to deploy krakend in  a kubernetes cluster
+# KidsLoop Microgateway Base Helm Chart
+
+An helm chart to deploy a krakend instance in a kubernetes cluster
+
 * Installs the api-gateway system [KrakenD](http://krakend.io/)
+
+Assumes all configuration mounting will be done via dockerfile.
+
+In order to use this helm chart, please make sure you supply your own `values.yaml` file.
+The values in the `values.yaml` file in this repository are placeholders only and should
+not be used in any environment.
 
 ## Original Source
 
