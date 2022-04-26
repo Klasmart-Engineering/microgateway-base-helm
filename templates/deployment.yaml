@@ -37,6 +37,18 @@ spec:
             {{- if .Values.env }}
             {{- toYaml .Values.env | nindent 12 }}
             {{- end }}
+            - name: FC_ENABLE
+              value: 1
+            - name: FC_SETTINGS
+              value: "/etc/krakend/config/settings/{{ .Values.environment }}/{{ .Values.region }}"
+            - name: FC_PARTIALS
+              value: "/etc/krakend/config/partials"
+            - name: FC_TEMPLATES
+              value: "/etc/krakend/config/templates"
+            - name: REGION
+              value: "{{ .Values.region }}"
+            - name: ENVIRONMENT
+              value: "{{ .Values.environment }}"
           ports:
             - name: http
               containerPort: 8080

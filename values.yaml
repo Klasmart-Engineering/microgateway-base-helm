@@ -74,3 +74,10 @@ tolerations: []
 affinity: {}
 
 env: []
+
+
+# These variables are used to set the directory which the templating engine
+# resolves the configuration for the krakend.json file
+# Please make sure these are set
+region: ""
+environment: ""
