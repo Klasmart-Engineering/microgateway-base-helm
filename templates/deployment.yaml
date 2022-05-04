@@ -38,7 +38,7 @@ spec:
             {{- toYaml .Values.env | nindent 12 }}
             {{- end }}
             - name: FC_ENABLE
-              value: 1
+              value: "1"
             - name: FC_SETTINGS
               value: "/etc/krakend/config/settings/{{ .Values.environment }}/{{ .Values.region }}"
             - name: FC_PARTIALS
