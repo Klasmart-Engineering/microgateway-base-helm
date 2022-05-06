@@ -45,6 +45,8 @@ spec:
               value: "/etc/krakend/config/partials"
             - name: FC_TEMPLATES
               value: "/etc/krakend/config/templates"
+            - name: USAGE_DISABLE
+              value: "1"
             - name: REGION
               value: "{{ .Values.region }}"
             - name: ENVIRONMENT
