@@ -40,7 +40,7 @@ spec:
             - name: FC_ENABLE
               value: "1"
             - name: FC_SETTINGS
-              value: "/etc/krakend/config/settings/{{ .Values.environment }}/{{ .Values.region }}"
+              value: "/etc/krakend/config/settings/{{ .Values.global.environment }}/{{ .Values.global.region }}"
             - name: FC_PARTIALS
               value: "/etc/krakend/config/partials"
             - name: FC_TEMPLATES
@@ -48,9 +48,9 @@ spec:
             - name: USAGE_DISABLE
               value: "1"
             - name: REGION
-              value: "{{ .Values.region }}"
+              value: "{{ .Values.global.region }}"
             - name: ENVIRONMENT
-              value: "{{ .Values.environment }}"
+              value: "{{ .Values.global.environment }}"
           ports:
             - name: http
               containerPort: 8080
