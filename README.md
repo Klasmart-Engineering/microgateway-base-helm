@@ -43,6 +43,12 @@ helm uninstall shared-gateway-landing-zone -n shared-gateway
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
 
+## Publishing a new chart
+
+```sh
+helm package charts -d artifacts
+```
+
 ## Upgrading an existing Release to a new major version
 
 A major chart version change (like v1.2.3 -> v2.0.0) indicates that there is an
