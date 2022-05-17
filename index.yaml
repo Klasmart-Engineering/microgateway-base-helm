@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  kl-base-microgateway:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-05-17T06:54:39.861056-06:00"
+    description: A Helm chart for Kubernetes
+    digest: 3ebc072566fd4828aa33f1de38d9aa7ac1ffaa48aecc396cecee13ea97fe634a
+    name: kl-base-microgateway
+    type: application
+    urls:
+    - artifacts/kl-base-microgateway-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-05-17T06:54:39.85917-06:00"
