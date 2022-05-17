@@ -1,8 +1,10 @@
 name: Update Helm Index
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
+    paths:
+      - "**.tgz"
 
 jobs:
   build:
